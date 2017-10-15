@@ -1,0 +1,25 @@
+html { 
+  background: url(../images/otherbg.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header {
+	background-color: white;
+	opacity: 0.5;
+	border-radius: 10px;
+	text-align: center;
+	font-family: 'Cabin', sans-serif;
+	height: 270px;
+}
+
+.ruby {
+	width: 200px;
+}
+
+.images {
+	width: 67%;
+	margin: 0 auto;
+}
