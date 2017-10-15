@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
 var totalScore = 0;
+var totalScoreLog = 0;
 var wins = 0;
 var losses = 0;
 
@@ -9,9 +10,10 @@ var crystalTwo = 2;
 var crystalThree = 10;
 var crystalFour = 1;
 
-var randomNumber = [Math.floor(Math.random() * 100)];
+var randomNumber = Math.floor(Math.random() * 100);
 console.log(randomNumber);
 
+$("#random").html("Random Number: " + randomNumber);
 
 $("#ruby1").on("click", function () {
 	totalScore = totalScore + crystalOne;
@@ -45,6 +47,8 @@ if (totalScore === randomNumber) {
 	reset();
 };
 
+$("#playerscore").html("Your Score: " + totalScoreLog);
+
 console.log(wins);
 console.log(losses);
 
@@ -53,7 +57,7 @@ function reset() {
 	crystalOne = [Math.floor(Math.random() * 10)];
 	crystalTwo = [Math.floor(Math.random() * 10)];
 	crystalThree = [Math.floor(Math.random() * 10)];
-	crystalFour = [Math.floor(Math.random() * 100)];
+	crystalFour = [Math.floor(Math.random() * 10)];
 
 };
 
